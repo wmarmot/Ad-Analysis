@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # coding=utf-8
 # author:marmot
-#coding = utf-8
-
 
 import pandas as pd
 from adjust_price import set_float_value
@@ -19,6 +17,3 @@ click_list = [0, 3, 5, 10, 15, 20, 25, 30, 40, 50]
 initdata=set_float_value(base_path11, base_path22,initdata, acos_list, click_list, 'acos_abbr','click_abbr')
 print initdata[u'差值']
 initdata.to_excel(unicode(r"D:\待处理\KIMISS_FR\report\123.xlsx"),sheet_name='123',na_rep='',index=False)
-
-
-
